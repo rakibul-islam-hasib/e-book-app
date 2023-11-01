@@ -17,7 +17,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${inter.className}  ${teko.variable}`}>
+      <body className={`  ${teko.className}`}>
         <NextTopLoader showSpinner={false} color='#F875AA' />
         {children}
       </body>
