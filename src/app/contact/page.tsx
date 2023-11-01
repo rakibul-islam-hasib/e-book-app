@@ -8,7 +8,7 @@ const ContactPage: FC = () => {
         <div>
             <h1>Contact page here</h1>
             <NextUIProvider className='bg-tertiary'>
-                <main className='bg-tertiary'>
+                <main className=''>
                     <ContactPageWork />
                 </main>
             </NextUIProvider>

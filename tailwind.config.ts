@@ -15,12 +15,13 @@ const config: Config = {
         secondary: '#FFDFDF',
         tertiary: '#FFF6F6',
         'light-blue': '#AEDEFC',
+        blue : '#3B82F6',
       },
       fontFamily: {
         teko: 'var(--teko)',
       }
     },
   },
-  // plugins: [nextui({})],
+  plugins: [nextui({})],
 }
 export default config

@@ -5,10 +5,10 @@ const ContactPageWork = () => {
     return (
         <div>
             <h1>Hello</h1>
-            <Button color="primary">
+            <Button color="secondary">
                 Button
             </Button>
-            <Checkbox className='block' defaultSelected>Option</Checkbox>
+            <Checkbox className='block'  defaultSelected>Option</Checkbox>
         </div>
     );
 };
