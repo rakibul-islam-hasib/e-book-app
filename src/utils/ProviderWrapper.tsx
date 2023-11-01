@@ -5,7 +5,7 @@ type ProviderWrapperProps = {
 }
 
 const ProviderWrapper: FC<ProviderWrapperProps> = ({ children }) => {
-    return <div>{children}</div>;
+    return children as JSX.Element;
 };
 
 export default ProviderWrapper;
