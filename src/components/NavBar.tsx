@@ -1,8 +1,9 @@
 'use client';
 import { useRouter } from 'next/navigation';
-import React, { FC } from 'react';
+import React, { FC, useEffect, useState } from 'react';
 import NavLink from './functions/NavLink';
 import '../style/Navbar.css';
+import Link from 'next/link';
 
 type NavLinks = {
     id: number;
@@ -37,18 +38,35 @@ const navLinks: NavLinks[] = [
     }
 ]
 const NavBar: FC = () => {
+    const [isScrolled, setIsScrolled] = useState(false);
 
-    const router = useRouter();
+    useEffect(() => {
+        const handleScroll = () => {
+            const position = window.pageYOffset;
+            if (position > 1000) {
+                setIsScrolled(true);
+            } else {
+                setIsScrolled(false);
+            }
+        }
+        window.addEventListener('scroll', handleScroll, { passive: true });
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        }
+    }, []);
+
 
     return (
-        <nav className=' w-full bg-white backdrop-blur-2xl bg-opacity-50'>
+        <nav className={` font-teko pt-2 w-full bg-white backdrop-blur-lg bg-opacity-50 ${isScrolled && 'fixed'}`}>
             <div className="max-w-screen-xl flex items-center justify-between py-3 mx-auto">
-                <div onClick={() => router.push('/')} className="logo  cursor-pointer">
-                    <h1>Ebuker</h1>
-                </div>
+                <Link href='/'>
+                    <div className="logo  cursor-pointer">
+                        <h1>Ebuker</h1>
+                    </div>
+                </Link>
 
-                <div className="links">
-                    <ul className='flex nav-links items-center space-x-4 text-base '>
+                <div className="links hidden md:block">
+                    <ul className='flex nav-links items-center space-x-4 text-lg '>
                         {
                             navLinks.map((link) => {
                                 return (

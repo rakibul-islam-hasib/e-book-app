@@ -4,7 +4,8 @@
 
 body {
   scroll-behavior: smooth;
-  @apply bg-tertiary
+  @apply bg-tertiary h-full w-full;
+  min-height: 100vh;
 }
 
 
