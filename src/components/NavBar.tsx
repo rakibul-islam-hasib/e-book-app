@@ -2,7 +2,7 @@
 import { useRouter } from 'next/navigation';
 import React, { FC } from 'react';
 import NavLink from './functions/NavLink';
-import '@/style/NavBar.css';
+import '../style/Navbar.css';
 
 type NavLinks = {
     id: number;
@@ -48,12 +48,12 @@ const NavBar: FC = () => {
                 </div>
 
                 <div className="links">
-                    <ul className='flex items-center space-x-4 text-lg'>
+                    <ul className='flex nav-links items-center space-x-4 text-base '>
                         {
                             navLinks.map((link) => {
                                 return (
                                     <li key={link.id}>
-                                        <NavLink activeClass='active-link' href={link.path}>{link.name}</NavLink>
+                                        <NavLink activeClass='active-link' className='hover:text-primary duration-300' href={link.path}>{link.name}</NavLink>
                                     </li>
                                 );
                             })
