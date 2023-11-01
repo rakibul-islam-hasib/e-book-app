@@ -2,7 +2,6 @@ import type { Metadata } from 'next'
 import { Inter, Teko } from 'next/font/google'
 import NextTopLoader from 'nextjs-toploader';
 import './globals.css'
-import NavBar from '@/components/NavBar';
 
 const inter = Inter({ subsets: ['latin'] })
 const teko = Teko({ weight: ['300', '400', '500', '600', '700'], variable: '--teko', subsets: ['latin'] })
@@ -20,9 +19,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${inter.className}  ${teko.variable}`}>
         <NextTopLoader showSpinner={false} color='#F875AA' />
-        <NavBar />
         {children}
-
       </body>
     </html>
   )
