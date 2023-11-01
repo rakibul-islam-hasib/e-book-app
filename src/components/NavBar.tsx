@@ -1,7 +1,8 @@
 'use client';
-import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 import React, { FC } from 'react';
+import NavLink from './functions/NavLink';
+import '@/style/NavBar.css';
 
 type NavLinks = {
     id: number;
@@ -23,6 +24,16 @@ const navLinks: NavLinks[] = [
         id: 3,
         name: 'Contact',
         path: '/contact'
+    },
+    {
+        id: 4,
+        name: 'Login',
+        path: '/login'
+    },
+    {
+        id: 5,
+        name: 'Signup',
+        path: '/signup'
     }
 ]
 const NavBar: FC = () => {
@@ -30,21 +41,19 @@ const NavBar: FC = () => {
     const router = useRouter();
 
     return (
-        <nav>
+        <nav className=' w-full bg-white backdrop-blur-2xl bg-opacity-50'>
             <div className="max-w-screen-xl flex items-center justify-between py-3 mx-auto">
-                <div onClick={() => router.push('/')} className="logo cursor-pointer">
+                <div onClick={() => router.push('/')} className="logo  cursor-pointer">
                     <h1>Ebuker</h1>
                 </div>
-                <div className="search">
-                    <input type="text" className='outline-none' spellCheck={false} placeholder="Search" />
-                </div>
+
                 <div className="links">
                     <ul className='flex items-center space-x-4 text-lg'>
                         {
                             navLinks.map((link) => {
                                 return (
                                     <li key={link.id}>
-                                        <Link href={link.path}>{link.name}</Link>
+                                        <NavLink activeClass='active-link' href={link.path}>{link.name}</NavLink>
                                     </li>
                                 );
                             })
