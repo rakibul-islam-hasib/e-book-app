@@ -1,5 +1,7 @@
 import React, { FC } from 'react';
 import { FaDownload } from 'react-icons/fa';
+import { IoBookSharp } from 'react-icons/io5';
+import { PiPenNibFill } from 'react-icons/pi';
 
 const Feature: FC = () => {
     const cardsData = [
@@ -12,26 +14,26 @@ const Feature: FC = () => {
         {
             id: 2,
             title: 'Premium Books',
-            icon: <FaDownload />,
+            icon: <IoBookSharp />,
             description: 'We have also premium books and articles. You can buy them at a very low price. And enjoy reading them.'
         },
         {
             id: 3,
             title: 'Professional Writers',
-            icon: <FaDownload />,
+            icon: <PiPenNibFill />,
             description: 'We have professional writers who write books and articles for us. You can also write for us. And earn money.'
         }
     ]
 
     return (
         <section className='max-w-screen-xl w-[90%] md:w-full mx-auto pb-52'>
-            <div className="py-8">
-                <h1 className='text-4xl text-center font-semibold text-primary-600'>Features</h1>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod unde optio voluptates quasi consequuntur cum incidunt repellat dicta odio, impedit accusamus iste fugit. Itaque aliquid quisquam odit veniam, temporibus sit!</p>
+            <div className="py-8 text-center w-[70%] md:w-1/2 mx-auto">
+                <h1 className='text-4xl text-center font-Bebas_Neue font-semibold text-primary'>Features</h1>
+                <p className='text-base'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod unde optio voluptates quasi consequuntur cum incidunt repellat dicta odio, impedit accusamus iste fugit. Itaque aliquid quisquam odit veniam, temporibus sit!</p>
             </div>
             <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4'>
                 {cardsData.map((card) => (
-                    <div key={card.id} className='bg-tertiary hover:-translate-y-2 duration-250 flex justify-center items-center flex-col min-h-[229px] rounded-tr-none rounded-bl-none overflow-hidden group relative rounded-tl-[40px] rounded-br-[40px] font-teko shadow-lg p-4'>
+                    <div key={card.id} className='bg-tertiary hover:-translate-y-2 border border-primary duration-250 flex justify-center items-center flex-col min-h-[229px] rounded-tr-none rounded-bl-none overflow-hidden group relative rounded-tl-[40px] rounded-br-[40px] font-teko shadow-lg p-4'>
                         <div className="z-10 absolute h-full w-full pt-2 ">
                             <div className='flex items-center justify-center'>
                                 <div className='text-4xl p-4 bg-gray-200 rounded-full group-hover:rotate-[360deg] duration-250 text-light-blue'>{card.icon}</div>
