@@ -1,13 +1,12 @@
 import NavBar from '@/components/NavBar';
+import { Bebas_Neue } from 'next/font/google';
 import React from 'react';
 
-type Props = {
-    children: React.ReactNode
+const bebasNeue = Bebas_Neue({ subsets: ['latin'], weight: ['400'], variable: '--bebas-neue' })
 
-}
 const HomeLayout: React.FC<Props> = ({ children }) => {
     return (
-        <main>
+        <main className={bebasNeue.variable}>
             <NavBar />
             {children}
         </main>
@@ -15,3 +14,9 @@ const HomeLayout: React.FC<Props> = ({ children }) => {
 };
 
 export default HomeLayout;
+
+
+type Props = {
+    children: React.ReactNode
+
+}

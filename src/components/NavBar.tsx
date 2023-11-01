@@ -57,7 +57,7 @@ const NavBar: FC = () => {
 
 
     return (
-        <nav className={` font-teko pt-2 w-full bg-white backdrop-blur-lg bg-opacity-50 ${isScrolled && 'fixed'}`}>
+        <nav className={` font-teko pt-2 w-full bg-white backdrop-blur-3xl bg-opacity-40 ${isScrolled && 'fixed'}`}>
             <div className="max-w-screen-xl flex items-center justify-between py-3 mx-auto">
                 <Link href='/'>
                     <div className="logo  cursor-pointer">

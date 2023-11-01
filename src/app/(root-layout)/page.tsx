@@ -1,10 +1,11 @@
 import Link from 'next/link';
 import React from 'react';
+import Hero from './home/Hero';
 
 const MainPage: React.FC = () => {
   return (
     <div>
-      <span>To view all elements Click here <Link href='/datas'>Gooooo</Link></span>
+      <Hero />
     </div>
   );
 };
