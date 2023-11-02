@@ -13,12 +13,17 @@ export const metadata: Metadata = {
 // const edu_tas = Edu_TAS_Beginner({ subsets: ['latin'], weight: ['400', '500', '600', '700'], variable: '--teko' })
 const teko = localFont(
   {
-    src: '../assets/teko.ttf',
+    src: '../assets/fonts/teko.ttf',
     display: 'swap',
     variable: '--teko',
   }
 )
 
+const fastTrack = localFont({
+  src: '../assets/fonts/Fast-Track.otf',
+  display: 'swap',
+  variable: '--fast-track',
+})
 
 export default function RootLayout({
   children,
@@ -27,7 +32,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${teko.className}`}>
+      <body className={`${teko.className} ${fastTrack.variable}`}>
         <NextTopLoader showSpinner={false} color='#F875AA' />
         {children}
       </body>

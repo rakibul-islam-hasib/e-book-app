@@ -20,6 +20,7 @@ const config: Config = {
       fontFamily: {
         teko: 'var(--teko)',
         Bebas_Neue: 'var(--bebas-neue)',
+        'fast-track': 'var(--fast-track)',
       }
     },
   },
