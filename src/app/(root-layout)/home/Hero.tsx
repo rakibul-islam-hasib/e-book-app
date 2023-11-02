@@ -1,5 +1,7 @@
 import React from 'react';
-import '@/style/Hero.css'
+import '@/style/Hero.css';
+import { MdOutlineExplore } from 'react-icons/md';
+import { GiArchiveResearch } from 'react-icons/gi';
 
 const Hero: React.FC = () => {
     return (
@@ -29,8 +31,25 @@ const Hero: React.FC = () => {
                         </div>
                     </div>
                 </div>
-                <div className="mt-8">
-                    <button className='px-8 pb-3 pt-[14px] bg-primary text-white rounded-full hover:bg-primary-600 duration-250'>Explore</button>
+                <div className="mt-8 flex items-center gap-6">
+                    <button
+                        className='px-8 relative overflow-hidden pb-3 pt-[14px] group bg-primary inline-flex items-center gap-1 text-white rounded-full  duration-250'
+                    >
+                        <span className='inline-flex  z-10 h-full w-full items-center gap-1'>
+                            <MdOutlineExplore className="text-2xl" />
+                            Explore
+                        </span>
+                        <span className='absolute bottom-0 bg-primary-600 z-[5] left-0 h-0 w-full group-hover:h-full duration-400 transition-all ease-in-out  rounded-full'></span>
+                    </button>
+                    <button
+                        className='px-8 relative overflow-hidden pb-3 pt-[14px] group outline-none bg-primary-600 inline-flex items-center gap-1 text-white rounded-full  duration-250'
+                    >
+                        <span className='inline-flex  z-10 h-full w-full items-center gap-1'>
+                            <GiArchiveResearch className="text-2xl" />
+                            Search
+                        </span>
+                        <span className='absolute bottom-0 bg-primary z-[5] left-0 h-0 w-full group-hover:h-full duration-400 transition-all ease-in-out  rounded-full'></span>
+                    </button>
                 </div>
             </div>
         </div>
