@@ -40,7 +40,7 @@ const Feature: FC = () => {
                             </div>
                             <div className='mt-4 text-center px-4'>
                                 <h3 className='text-xl uppercase text-primary-600  font-semibold'>{card.title}</h3>
-                                <p className='mt-4 whitespace-normal text-gray-600'>{card.description}</p>
+                                <p className='mt-4 whitespace-normal text-gray-500'>{card.description}</p>
                             </div>
                         </div>
                         <div className="h-0 group-hover:h-full ease-in-out  delay-75 z-[5] w-full  absolute bottom-0 duration-300 left-0 bg-secondary">
