@@ -43,7 +43,7 @@ const Feature: FC = () => {
                                 <p className='mt-4 whitespace-normal text-gray-600'>{card.description}</p>
                             </div>
                         </div>
-                        <div className="h-0 group-hover:h-full ease-in-out  delay-75 z-[5] w-full rounded-lg absolute bottom-0 duration-300 left-0 bg-secondary">
+                        <div className="h-0 group-hover:h-full ease-in-out  delay-75 z-[5] w-full  absolute bottom-0 duration-300 left-0 bg-secondary">
 
                         </div>
 

@@ -21,6 +21,9 @@ const Hero: React.FC = () => {
                         </div>
                     </div>
                 </div>
+                <div className="">
+                    <h2 className='text-5xl font-fast-track'>Hello</h2>
+                </div>
             </div>
         </div>
     );
