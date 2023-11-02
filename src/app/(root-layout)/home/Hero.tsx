@@ -22,7 +22,6 @@ const Hero: React.FC = () => {
                     </div>
                 </div>
             </div>
-            <h1 className='font-Bebas_Neue text-5xl'>Hello </h1>
         </div>
     );
 };
