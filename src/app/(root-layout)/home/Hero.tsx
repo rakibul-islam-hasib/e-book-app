@@ -3,7 +3,7 @@ import '@/style/Hero.css'
 
 const Hero: React.FC = () => {
     return (
-        <div className='h-screen w-full flex justify-center items-center'>
+        <div className='h-screen w-full font-Bebas_Neue flex justify-center items-center'>
             <div className="">
                 <div className="container">
                     <div className="content">
@@ -22,6 +22,7 @@ const Hero: React.FC = () => {
                     </div>
                 </div>
             </div>
+            <h1 className='font-Bebas_Neue text-5xl'>Hello </h1>
         </div>
     );
 };

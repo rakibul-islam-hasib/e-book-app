@@ -28,8 +28,8 @@ const Feature: FC = () => {
     return (
         <section className='max-w-screen-xl w-[90%] md:w-full mx-auto pb-52'>
             <div className="py-8 text-center w-[70%] md:w-1/2 mx-auto">
-                <h1 className='text-4xl text-center font-Bebas_Neue font-semibold text-primary'>Features</h1>
-                <p className='text-base'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod unde optio voluptates quasi consequuntur cum incidunt repellat dicta odio, impedit accusamus iste fugit. Itaque aliquid quisquam odit veniam, temporibus sit!</p>
+                <h1 className='text-4xl title-s w-fit mx-auto text-center uppercase font-semibold text-primary'>Features</h1>
+                <p className='text-base'>Here is our feature. We  provide many services. Here three demo. Of books</p>
             </div>
             <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4'>
                 {cardsData.map((card) => (

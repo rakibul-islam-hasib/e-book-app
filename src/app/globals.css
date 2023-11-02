@@ -9,6 +9,22 @@ body {
 }
 
 
+.title-s {
+  width: fit-content;
+  margin: 0 auto;
+}
+
+.title-s:after {
+  display: block;
+  content: '';
+  border-bottom: solid 4px #F875AA;
+  transform: scaleX(0);
+  transition: transform 250ms ease-in-out;
+}
+
+.title-s:hover:after {
+  transform: scaleX(1);
+}
 
 
 
