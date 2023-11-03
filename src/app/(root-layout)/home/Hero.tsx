@@ -9,7 +9,7 @@ const Hero: React.FC = () => {
             <div className="flex justify-center items-center flex-col">
 
                 <div className="mb-8 text-center">
-                    <h1 className='font-fast-track mb-10 text-primary text-5xl'>PapyrusPDFs <span className='text-primary-600'>Free</span> And <span className='text-primary-600'>Freemium</span> PDF Books </h1>
+                    <h1 className='font-fast-track mb-10 text-primary text-4xl leading-0 md:text-5xl'>PapyrusPDFs <span className='text-primary-600'>Free</span> And <span className='text-primary-600'>Freemium</span> PDF Books </h1>
                     <p className='text-gray-500'>You can download free PDF books here. You can also purchase many books at low prices. We offer Freemium Services</p>
                     <p className='mt-4 text-gray-500'>We have 100+ active writers. </p>
                 </div>
