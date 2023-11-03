@@ -3,7 +3,7 @@ import { Card, CardBody, Tab, Tabs } from '@nextui-org/react';
 import React, { FC, useState } from 'react';
 
 const TabsForTopBooks: FC = () => {
-    const [active, setActive] = useState('music');
+    const [active, setActive] = useState<any>('music');
     return (
         <section>
             <div className="flex flex-col justify-center items-center">
