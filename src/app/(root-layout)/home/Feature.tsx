@@ -33,7 +33,7 @@ const Feature: FC = () => {
             </div>
             <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4'>
                 {cardsData.map((card) => (
-                    <div key={card.id} className='bg-tertiary hover:-translate-y-2 border border-primary duration-250 flex justify-center items-center flex-col min-h-[229px] rounded-tr-none rounded-bl-none overflow-hidden group relative rounded-tl-[40px] rounded-br-[40px] font-teko shadow-md p-4'>
+                    <div key={card.id} className='bg-tertiary hover:-translate-y-2 border border-primary duration-250 flex justify-center items-center flex-col min-h-[229px] rounded-tr-none rounded-bl-none overflow-hidden group relative rounded-tl-[40px] rounded-br-[40px] font-teko shadow-sm p-4'>
                         <div className="z-10 absolute h-full w-full pt-2 ">
                             <div className='flex items-center justify-center'>
                                 <div className='text-4xl p-4 bg-gray-200 rounded-full group-hover:rotate-[360deg] duration-250 text-light-blue'>{card.icon}</div>
