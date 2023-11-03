@@ -21,7 +21,7 @@ interface IBook {
     _id: number;
 }
 
-const books: IBook[] = [
+export const books: IBook[] = [
     {
         title: "The Fourth Wing",
         img: "https://i.ibb.co/2s61p0G/Fourth-Wing.jpg",

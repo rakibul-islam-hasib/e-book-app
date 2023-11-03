@@ -1,5 +1,7 @@
 'use client';
+import { books } from '@/utils';
 import { Card, CardBody, Tab, Tabs } from '@nextui-org/react';
+import Image from 'next/image';
 import React, { FC, useState } from 'react';
 
 const TabsForTopBooks: FC = () => {
@@ -10,16 +12,24 @@ const TabsForTopBooks: FC = () => {
                 <Tabs selectedKey={active} onSelectionChange={setActive} aria-label="Options" color='primary'>
 
                     <Tab key="photos" title="Photos">
-                        <div className="">
-                            <h1>Bols </h1>
+                        <div className="border w-full">
+                            {
+                                books.map((book) => <div key={book._id} className="">
+                                    <Image src={book.img} width={350} height={500} alt='Image ' />
+                                    <h1>{book.title}</h1>
+                                </div>)
+                            }
                         </div>
                     </Tab>
                     <Tab key="music" title="Music">
-                        <Card>
-                            <CardBody>
-                                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                            </CardBody>
-                        </Card>
+                        <div className="border w-full grid gap-12 grid-cols-5">
+                            {
+                                books.map((book) => <div key={book._id} className="">
+                                    <Image className='h-[280px] w-[180px]' src={book.img} width={350} height={500} alt={'image of ' + book.title + 'book'} />
+                                    <h1>{book.title}</h1>
+                                </div>)
+                            }
+                        </div>
                     </Tab>
                     <Tab key="videos" title="Videos">
                         <Card>
