@@ -26,7 +26,7 @@ const Feature: FC = () => {
     ]
 
     return (
-        <section className='max-w-screen-xl w-[90%] md:w-full mx-auto pb-52'>
+        <section className='max-w-screen-xl w-[90%] md:w-full mx-auto pb-24'>
             <div className="py-8 text-center w-[70%] md:w-1/2 mx-auto">
                 <h1 className='text-4xl title-s w-fit mx-auto text-center uppercase font-semibold text-primary'>Features</h1>
                 <p className='text-base'>Here is our feature. We  provide many services. Here three demo. Of books</p>

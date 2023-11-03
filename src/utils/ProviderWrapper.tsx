@@ -1,3 +1,5 @@
+'use client';
+import { NextUIProvider } from '@nextui-org/react';
 import { FC, ReactNode } from 'react';
 
 type ProviderWrapperProps = {
@@ -5,7 +7,9 @@ type ProviderWrapperProps = {
 }
 
 const ProviderWrapper: FC<ProviderWrapperProps> = ({ children }) => {
-    return children as JSX.Element;
+    return <NextUIProvider>
+        {children}
+    </NextUIProvider>;
 };
 
 export default ProviderWrapper;
