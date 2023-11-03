@@ -22,11 +22,17 @@ const TabsForTopBooks: FC = () => {
                         </div>
                     </Tab>
                     <Tab key="music" title="Music">
-                        <div className="border w-full grid gap-12 grid-cols-5">
+                        <div className="w-full grid lg:gap-14 grid-cols-2 md:grid-cols-3  lg:grid-cols-4">
                             {
-                                books.map((book) => <div key={book._id} className="">
-                                    <Image className='h-[280px] w-[180px]' src={book.img} width={350} height={500} alt={'image of ' + book.title + 'book'} />
-                                    <h1>{book.title}</h1>
+                                books.map((book) => <div key={book._id} className="relative group overflow-hidden">
+                                    <div className="">
+                                        <Image className='h-[380px] w-[250px]' src={book.img} width={350} height={500} alt={'image of ' + book.title + 'book'} />
+
+                                    </div>
+                                    <div className="absolute text-white text-center px-2 bg-black bg-opacity-70 group-hover:bottom-0 -bottom-[400px] left-0 w-full h-full duration-200">
+
+                                        <h1 className='text-3xl uppercase'>{book.title}</h1>
+                                    </div>
                                 </div>)
                             }
                         </div>
