@@ -71,18 +71,18 @@ export const books: IBook[] = [
         category: "Fantasy",
         _id: 4
     },
-    {
-        title: "Furies of Calderon",
-        img: "https://i.ibb.co/NCgJ8zt/Furies-of-Calderon.jpg",
-        published: "2005-06-28",
-        description: 'Furies of Calderon is the first novel in the high fantasy series Codex Alera by Jim Butcher. The novel was first released by Ace Books in the United States as a Hardcover edition on October 5, 2004, followed by a Paperback edition on June 26, 2005.',
-        author: "Jim Butcher",
-        price: 2.99,
-        rating: 4.5,
-        reviews: 10,
-        category: "Fantasy",
-        _id: 5
-    }
+    // {
+    //     title: "Furies of Calderon",
+    //     img: "https://i.ibb.co/NCgJ8zt/Furies-of-Calderon.jpg",
+    //     published: "2005-06-28",
+    //     description: 'Furies of Calderon is the first novel in the high fantasy series Codex Alera by Jim Butcher. The novel was first released by Ace Books in the United States as a Hardcover edition on October 5, 2004, followed by a Paperback edition on June 26, 2005.',
+    //     author: "Jim Butcher",
+    //     price: 2.99,
+    //     rating: 4.5,
+    //     reviews: 10,
+    //     category: "Fantasy",
+    //     _id: 5
+    // }
 ]
 
 
