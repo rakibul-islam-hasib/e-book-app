@@ -58,7 +58,13 @@ const LoginFrom: React.FC<Props> = ({ isOpen, onOpenChange, onRegisterOpen }) =>
                             </div>
                         </ModalBody>
                         <ModalFooter>
-                            <Button color="danger" variant="flat" onPress={onClose}>
+                            <Button color="danger" variant="flat" onPress={
+                                () => {
+                                    onClose();
+                                    onRegisterOpen();
+                                }
+                            }
+                            >
                                 Close
                             </Button>
                             <Button color="primary" onPress={onClose}>
