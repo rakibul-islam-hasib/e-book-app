@@ -81,8 +81,6 @@ const NavBar: FC = () => {
                     </div>
                 </div>
             </nav>
-
-            {/* Register Modal */}
             <RegisterFrom
                 isRegisterOpen={isRegisterOpen}
                 onLoginOpen={onOpen}
