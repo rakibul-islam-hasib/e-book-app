@@ -52,8 +52,10 @@ const LoginFrom: React.FC<Props> = ({ isOpen, onOpenChange, onRegisterOpen }) =>
                                         onClose();
                                         onRegisterOpen();
                                     }
-                                } >
-                                    Forgot password?
+                                }
+                                className='hover:text-primary duration-200 cursor-pointer'
+                                >
+                                    Register
                                 </span>
                             </div>
                         </ModalBody>

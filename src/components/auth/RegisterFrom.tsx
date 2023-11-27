@@ -25,6 +25,13 @@ const RegisterFrom: React.FC<Props> = ({ isRegisterOpen, onRegisterOpenChange, o
                                 endContent={
                                     <BiMailSend className="text-2xl text-default-400 pointer-events-none flex-shrink-0" />
                                 }
+                                label="Name"
+                                placeholder="Enter your name"
+                            />
+                            <Input
+                                endContent={
+                                    <BiMailSend className="text-2xl text-default-400 pointer-events-none flex-shrink-0" />
+                                }
                                 label="Email"
                                 placeholder="Enter your email"
                             />
@@ -45,7 +52,7 @@ const RegisterFrom: React.FC<Props> = ({ isRegisterOpen, onRegisterOpenChange, o
                                 >
                                     Remember me
                                 </Checkbox>
-                                <span onClick={onLoginOpen} color="primary" >
+                                <span className='hover:text-primary duration-200 cursor-pointer' onClick={onLoginOpen} >
                                     Login
                                 </span>
                             </div>
